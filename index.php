@@ -183,7 +183,7 @@
 
         <div class="form-group">
             <label>Mobile Phone No</label>
-            <input type="text" name="mobile" autocomplete="off" class="form-control">
+            <input type="text" name="mobile phone no" autocomplete="off" class="form-control">
         </div>
         
         <div class="form-group">
@@ -216,7 +216,10 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
 
+<!-- INSERT INTO `userinfodata` (`id`, `user`, `email`, `mobile phone no`, `address`, `gender`, `comments`) 
+VALUES ('1', 'testname', 'taran@taran.com', '9416243324', 'rupnagar,Punjab', 'Male', 'Hey This is our first website');-->
 
 </body>
 
