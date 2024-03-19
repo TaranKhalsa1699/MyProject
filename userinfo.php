@@ -5,19 +5,19 @@ if($con){
     echo "Connection Successful";
 }
 else{
-    die ("No connection" . mysqli_connect_error());
+    echo "No connection";
 }
 
-mysqli_select_db($con, "tour&travelsdata");
+mysqli_select_db($con, 'tripdata');
 $user = $_POST['user'];
 $email = $_POST['email'];
-$mobilephoneno = $_POST['mobile phone no'];
+$mobile = $_POST['mobile'];
 $address = $_POST['address'];
 $gender = $_POST['gender'];
 $comments = $_POST['comments'];
 
-$query = " insert into userinfodata (user, email, mobile phone no, address, gender, comments)
-values ('$user', '$email', '$mobilephoneno', '$address', '$gender', '$comments') ";
+$query = " insert into userinfodata (user, email, mobile, address, gender, comments)
+values ('$user', '$email', '$mobile', '$address', '$gender', '$comments') ";
 
 echo "$query";
 
